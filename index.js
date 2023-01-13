@@ -2,10 +2,12 @@ const ObjectsToCsv = require("objects-to-csv");
 const express = require("express");
 const axios = require("axios");
 const fs = require("fs");
+const path = require("path");
 
 const app = express();
 
 app.set("view engine", "ejs");
+app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", async (req, res) => {
 	res.render("index");
