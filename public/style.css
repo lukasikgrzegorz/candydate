@@ -1,3 +1,106 @@
-button{
-  font-size: 40px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #FFF1FE;
+  color: #6C0066;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+a{
+  color: currentColor;
+  text-decoration: none;
+}
+
+.button{
+  font: inherit;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 20px 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #6C0066;
+  transition: transform 250ms linear;
+}
+
+.button:hover{
+  transform: scale(1.1);
+}
+
+.section{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 60px;
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .logo {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .logo {
+    font-size: 130px;
+  }
+}
+
+.logo__item {
+  text-transform: capitalize;
+  line-height: 1em;
+}
+
+.logo__item:first-child{
+  color:#CC3DC4;
+}
+
+.logo__item:last-child{
+  color: #FD82F6;
+}
+
+.slogan{
+  margin-bottom: 40px;
+  font-size: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .slogan {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slogan {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .slogan {
+    font-size: 25px;
+  }
 }
