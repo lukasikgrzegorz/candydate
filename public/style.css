@@ -5,7 +5,12 @@
 }
 
 body{
-  background-color: #FFF1FE;
+  background-image: repeating-radial-gradient(circle at center,
+        #FFFFFF,
+        #FFFFFF 20px,
+        #FEFCFE 20px,
+        #FEFCFE 40px
+      );
   color: #6C0066;
   font-family: 'Montserrat', sans-serif;
   width: 100%;
@@ -82,7 +87,7 @@ a{
 }
 
 .slogan{
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   font-size: 10px;
   text-align: center;
 }
