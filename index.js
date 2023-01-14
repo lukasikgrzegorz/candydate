@@ -4,6 +4,8 @@ const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
 
+const API_KEY = "UN2d6SNd0RoesuGxxAKFVin9UPnNHEAmfhejdZa5";
+
 const app = express();
 
 app.set("view engine", "ejs");
@@ -25,7 +27,7 @@ app.get("/download", async (req, res) => {
 				method: "get",
 				url: currentURL,
 				headers: {
-					Authorization: "Token token=UN2d6SNd0RoesuGxxAKFVin9UPnNHEAmfhejdZa5",
+					Authorization: `Token token=${API_KEY}`,
 					"X-Api-Version": "20210218",
 				},
 			});
