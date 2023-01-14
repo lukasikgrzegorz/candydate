@@ -42,6 +42,8 @@ app.get('/download', async (req, res) => {
       }
     } catch (error) {
       console.log(error);
+      res.render('error');
+      return;
     }
   } while (currentURL != null);
 

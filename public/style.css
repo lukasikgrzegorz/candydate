@@ -39,6 +39,19 @@ a{
   transform: scale(1.1);
 }
 
+.button-holder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-holder__text{
+  padding: 15px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+
 .section{
   width: 100%;
   height: 100%;
@@ -53,6 +66,11 @@ a{
   font-size: 60px;
   display: flex;
   gap: 10px;
+  background-image: url(./logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 30px;
 }
 
 @media screen and (min-width: 480px) {
@@ -86,7 +104,32 @@ a{
   color: #FD82F6;
 }
 
-.slogan{
+.error{
+  margin-bottom: 80px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .error {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .error {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .error {
+    font-size: 25px;
+  }
+}
+
+.slogan {
   margin-bottom: 80px;
   font-size: 10px;
   text-align: center;
